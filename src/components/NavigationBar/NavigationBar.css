@@ -1,0 +1,42 @@
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+nav {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: right 1s ease-in-out;
+  z-index: 10;
+  font-size: 2.5vh;
+}
+
+nav.active {
+  right: 5rem;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+li a {
+  padding: 1rem;
+  transition: background-color 0.3s ease-in-out;
+  font-family: K2D;
+}
+
+li a:hover {
+  background: -webkit-linear-gradient(45deg, #ff00f5, #6269ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+      display: none;
+  }
+ /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+}
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+.exp-section {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.logo-company {
+  width: 100px;
+  height: 'auto';
+}
+
+.w-100pc {
+  width: 100%;
+}
+
+.h-100pc {
+  height: 100%;
+}
+
+.work-period {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ver-col {
+  height: 50px;
+  width: 4px;
+}
+
+.border-gradient {
+  border: 2px solid transparent;
+  border-radius: 1.5rem;
+  background: 
+    linear-gradient(to bottom, white, white), 
+    linear-gradient(to bottom, rgb(65, 2, 2) , blue); 
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+
+.border-gradient-2 {
+  border: 3px solid transparent;
+  border-radius: 1.5rem;
+  background: 
+    linear-gradient(to bottom, white, white), 
+    linear-gradient(to bottom, rgb(255, 111, 28) , rgb(17, 17, 153)); 
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+
+.border-gradient-3 {
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  background: 
+    linear-gradient(to bottom, white, white), 
+    linear-gradient(to bottom, rgb(255, 111, 28) , rgb(17, 17, 153)); 
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+
+.color-gradient {
+  background: linear-gradient(to right, #ee00ff, #3b38ff);
+  background-clip: text;
+  color: transparent;
+}
+
+.color-gradient-2 {
+  background: linear-gradient(to right, #ff0000, #462eff);
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-gradient {
+  background: linear-gradient(to right, #ff0000, #3b38ff);
+}
